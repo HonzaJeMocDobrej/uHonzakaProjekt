@@ -61,3 +61,22 @@ header nav ul li a {
 .hero-section button {
     font-size: var(--font-size-s);
 }
+
+.warning-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--font-size-2xs);
+    color: var(--color-warning-text);
+    font-weight: var(--font-weight-l);
+    background-color: var(--color-warning-bg);
+    padding: calc(var(--grid-unit) * 1.5) 0;
+    border-top: 1px solid var(--color-warning-border);
+    border-bottom: 1px solid var(--color-warning-border);
+}
+
+.warning-section > img {
+    height: calc(var(--grid-unit) * 2.5);
+    width: calc(var(--grid-unit) * 2.5);
+}
