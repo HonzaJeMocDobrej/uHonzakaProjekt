@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <!-- Zde bude burger menu -->
     <header>
-        <img src="" alt="logo restaurace">
+        <a href="/">U Honzáka</a>
         <nav>
             <ul>
-                <li><a href="">Domů</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">O nás</a></li>
-                <li><a href="">Kontakt</a></li>
+                <li><a class="selected" href="/">Domů</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="o_nas.html">O nás</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
 
     <main>
-        <section>
+        <section class="hero-section">
             <div>
-                <h1>Restaurace U Honzáka</h1>
-                <h3>Tradiční česká kuchyně v srdci města</h3>
-                <button>Prohlédnout menu</button>
+                <h1 class="mb-4">Restaurace U Honzáka</h1>
+                <p class="mb-8">Tradiční česká kuchyně v srdci města</p>
+                <button id="menuBtn" class="py-4 px-8">Prohlédnout menu</button>
             </div>
         </section>
 
@@ -161,8 +165,8 @@
     </main>
     
     <footer>
-        <p>© 2024 Restaurace U Honzáka. Všechna práva vyhrazena. fedorja1@uhk.cz</p>
+        <p>© 2025 Restaurace U Honzáka. Všechna práva vyhrazena. fedorja1@uhk.cz</p>
     </footer>
-
+    <script src="./res/js/app.js"></script>
 </body>
 </html>
