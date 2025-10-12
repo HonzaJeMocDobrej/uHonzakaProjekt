@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="res/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -38,37 +38,41 @@
             <p>Varování: Tato webová stránka slouží pouze jako studentský projekt</p>
         </section>
         
-        <section>
-            <h2>O restauraci</h2>
-            <p>Restaurace U Honzáka je místem, kde se tradice setkává s moderním pojetím pohostinství. Nabízíme autentickou českou kuchyni připravovanou z nejkvalitnějších surovin s láskou a respektem k tradičním receptům.</p>
-            <p>Naším cílem je vytvořit pro vás přátelské prostředí, kde si vychutnáte výborné jídlo v příjemné atmosféře.</p>
-            <button>Zjistit více</button>
+        <section class="about-section py-20">
+            <div class="helper-div px-8">
+                <h2 class="mb-6">O restauraci</h2>
+                <p class="mb-4">Restaurace U Honzáka je místem, kde se tradice setkává s moderním pojetím pohostinství. Nabízíme autentickou českou kuchyni připravovanou z nejkvalitnějších surovin s láskou a respektem k tradičním receptům.</p>
+                <p class="mb-8">Naším cílem je vytvořit pro vás přátelské prostředí, kde si vychutnáte výborné jídlo v příjemné atmosféře.</p>
+                <button class="px-6 py-3">Zjistit více</button>
+            </div>
         </section>
         
-        <section>
-            <h2>Doporučujeme</h2>
-            <p>Naše speciality, které musíte ochutnat</p>
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <h4>Pečená kachna</h4>
-                    <p>S červeným zelím a houskovými knedlíky</p>
-                    <p>285 Kč</p>
+        <section class="recommend-section section-bg py-20">
+            <div class="helper-div px-8">
+                <h2 class="mb-4">Doporučujeme</h2>
+                <p class="mb-12">Naše speciality, které musíte ochutnat</p>
+                <div class="card-cont">
+                    <div class="card">
+                        <img src="" alt="">
+                        <h4>Pečená kachna</h4>
+                        <p>S červeným zelím a houskovými knedlíky</p>
+                        <p>285 Kč</p>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="">
+                        <h4>Gulášová polévka</h4>
+                        <p>Tradiční gulášovka s chlebem</p>
+                        <p>95 Kč</p>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="">
+                        <h4>Jablečný závin</h4>
+                        <p>S vanilkovou omáčkou</p>
+                        <p>75 Kč</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <h4>Gulášová polévka</h4>
-                    <p>Tradiční gulášovka s chlebem</p>
-                    <p>95 Kč</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h4>Jablečný závin</h4>
-                    <p>S vanilkovou omáčkou</p>
-                    <p>75 Kč</p>
-                </div>
+                <button class="px-6 py-3 mt-12">Celé menu</button>
             </div>
-            <button>Celé menu</button>
         </section>
         
         <section>
@@ -106,7 +110,7 @@
             </div>
         </section>
         
-        <section>
+        <section class="section-bg">
             <h2>Otevírací doba</h2>
             <p>Těšíme se na vaši návštěvu</p>
             <div>
@@ -158,7 +162,7 @@
                        <p>Email: info@uhonzaka.cz</p> 
                     </div>
                 </div>
-                <button>Kontaktní formulář</button>
+                <button class="px-6 py-3">Kontaktní formulář</button>
             </div>
         </section>
 

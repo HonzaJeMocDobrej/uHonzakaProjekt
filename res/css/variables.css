@@ -6,7 +6,8 @@
     --color-secondary-rgb: 245, 245, 244;
     --color-text: #3d3129;
     --color-text-secondary: #937c6c;
-    --color-button: #8c6144;
+    --color-button: #9b6c4b;
+    --color-button-secondary: #8c6144;
     --color-button-hover: #875d41;
     --color-warning-text: #ad1f1f;
     --color-warning-bg: #eedfde;
@@ -26,7 +27,7 @@
     --font-size-2xs: 0.8rem;
     --font-size-3xs: 0.64rem;
 
-    --font-heading: "Bitter", serif;
+    --font-heading: "Playfair Display", Georgie, serif;
     --font-text: "Raleway", sans-serif;
     --font-text-secondary: ;
 
