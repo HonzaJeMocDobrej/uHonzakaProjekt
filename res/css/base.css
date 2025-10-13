@@ -48,18 +48,18 @@ header {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
+  color: var(--color-text);
 }
 
 h2 {
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-xl);
-  color: var(--color-text);
 }
 
 p {
   font-family: var(--font-text);
   font-size: var(--font-size-s);
-  font-weight: var(--font-weight-s);
+  font-weight: var(--font-weight-m);
   line-height: calc(var(--grid-unit) * 3.25);
-  color: var(--color-primary);
+  color: var(--color-text-secondary);
 }

@@ -49,13 +49,13 @@ header nav ul li a {
 .hero-section h1 {
     font-size: var(--font-size-3xl);
     font-weight: var(--font-weight-l);
-    color: white;
+    color: var(--color-white);
 }
 
 .hero-section p {
     font-size: var(--font-size-m);
     font-weight: var(--font-weight-m);
-    color: white;
+    color: var(--color-white);
 }
 
 .hero-section button {
@@ -90,7 +90,7 @@ header nav ul li a {
 }
 
 .about-section > .helper-div {
-    max-width: calc(var(--grid-unit) * 112);
+    max-width: calc(var(--grid-unit) * 116);
 }
 
 .about-section p {
@@ -107,13 +107,45 @@ header nav ul li a {
 
 .recommend-section .card-cont {
     display: grid;
-    grid-auto-flow: column;
     gap: var(--space-l);
     width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(calc(var(--grid-unit) * 37.5), 1fr));
+    justify-content: space-around;
 }
 
 .recommend-section .card-cont .card {
     width: fit-content;
+}
+
+.recommend-section .card-cont .card img {
+    border-radius: var(--radius-l) var(--radius-l) 0 0;
+}
+
+.recommend-section .card-cont .card .card-bottom {
+    background-color: var(--color-secondary);
+    padding: calc(var(--grid-unit) * 3);
+    min-height: 176px;
+    min-height: calc(var(--grid-unit) * 22);
+    border-radius: 0 0 var(--radius-l) var(--radius-l);
+}
+
+.recommend-section .card-cont .card .card-bottom p, h4 {
+    text-align: left;
+}
+
+.recommend-section .card-cont .card .card-bottom h4 {
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-l);
+}
+
+.recommend-section .card-cont .card .card-bottom p {
+    font-size: var(--font-size-xs);
+}
+
+.recommend-section .card-cont .card .card-bottom .card-price {
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-l);
+    color: var(--color-primary);
 }
 
 .helper-div {
