@@ -40,7 +40,7 @@ header {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   background-color: rgba(var(--color-secondary-rgb), 0.8);
-  border-bottom: 1px solid rgba(164, 163, 163, 0.3);
+  border-bottom: 1px solid var(--color-border);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,6 +54,11 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-xl);
+}
+
+h4 {
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-l);
 }
 
 p {

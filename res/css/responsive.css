@@ -1,0 +1,27 @@
+@media (max-width: 1024px) {
+  .whyus-section .whyus-grid-cont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .recommend-section .card-cont {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 768px) {
+  .whyus-section .whyus-grid-cont {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .recommend-section .card-cont {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.timetable-section .timetable .timetable-item p:first-child {
+    font-size: var(--font-size-2xs);
+}
+
+.timetable-section .timetable .timetable-item p:nth-child(2) {
+    font-size: var(--font-size-xs);
+}
+}

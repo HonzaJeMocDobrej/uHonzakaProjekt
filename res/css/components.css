@@ -60,11 +60,6 @@ header nav ul li a {
 
 .hero-section button {
     font-size: var(--font-size-s);
-    background-color: var(--color-button-secondary);
-}
-
-.hero-section button:hover {
-    background-color: var(--color-button);
 }
 
 .warning-section {
@@ -106,15 +101,22 @@ header nav ul li a {
 }
 
 .recommend-section .card-cont {
-    display: grid;
     gap: var(--space-l);
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(calc(var(--grid-unit) * 37.5), 1fr));
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
+}
+
+.grid-cont {
+    display: grid;
+    width: 100%;
 }
 
 .recommend-section .card-cont .card {
     width: fit-content;
+}
+
+.recommend-section .card-cont .card:hover {
+    filter: brightness(0.95);
 }
 
 .recommend-section .card-cont .card img {
@@ -148,10 +150,66 @@ header nav ul li a {
     color: var(--color-primary);
 }
 
+.whyus-section .whyus-grid-cont {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-l);
+    justify-content: space-around;
+}
+
+.whyus-section .whyus-grid-cont .whyus-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whyus-section .whyus-grid-cont .whyus-grid-item p {
+    font-size: var(--font-size-xs);
+    text-align: center;
+}
+
+.whyus-section .whyus-grid-cont .whyus-grid-item .whyus-round-cont {
+    border-radius: var(--radius-round);
+    background-color: var(--color-round-icon);
+    width: calc(var(--grid-unit) * 8);
+    height: calc(var(--grid-unit) * 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timetable-section > .helper-div {
+    max-width: calc(var(--grid-unit) * 112);
+}
+
+.timetable-section .timetable {
+    background-color: var(--color-secondary);
+    padding: var(--space-l);
+    width: 100%;
+    max-width: calc(var(--grid-unit) * 56);
+    border-radius: var(--radius-m);
+}
+
+.timetable-section .timetable .timetable-item {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-xs) 0;
+}
+
+.timetable-section .timetable .timetable-item p:first-child {
+    color: var(--color-text);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-l);
+}
+
+.timetable-section .timetable .timetable-item p:nth-child(2) {
+    font-weight: var(--font-weight-xs);
+}
+
 .helper-div {
     margin: 0 auto;
     display: flex;
     align-items:center;
     justify-content: center;
     flex-direction: column;
+    padding: 0 var(--space-l);
 }

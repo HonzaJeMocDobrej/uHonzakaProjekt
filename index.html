@@ -39,7 +39,7 @@
         </section>
         
         <section class="about-section py-20">
-            <div class="helper-div px-8">
+            <div class="helper-div">
                 <h2 class="mb-6">O restauraci</h2>
                 <p class="mb-4">Restaurace U Honzáka je místem, kde se tradice setkává s moderním pojetím pohostinství. Nabízíme autentickou českou kuchyni připravovanou z nejkvalitnějších surovin s láskou a respektem k tradičním receptům.</p>
                 <p class="mb-8">Naším cílem je vytvořit pro vás přátelské prostředí, kde si vychutnáte výborné jídlo v příjemné atmosféře.</p>
@@ -48,10 +48,10 @@
         </section>
         
         <section class="recommend-section section-bg py-20">
-            <div class="helper-div px-8">
+            <div class="helper-div">
                 <h2 class="mb-4">Doporučujeme</h2>
                 <p class="mb-12">Naše speciality, které musíte ochutnat</p>
-                <div class="card-cont">
+                <div class="card-cont grid-cont">
                     <div class="card">
                         <img src="./res/img/kachna.png" alt="Pečená kachna s červeným zelím a knedlíky">
                         <div class="card-bottom">
@@ -81,72 +81,76 @@
             </div>
         </section>
         
-        <section>
-            <h2>Proč právě k nám</h2>
-            <p>Co nás odlišuje od ostatních</p>
-            <div>
-                <div>
-                    <div>
-                        <img src="" alt="ikonka úspěchu">
+        <section class="whyus-section  py-20">
+            <div class="helper-div">
+                <h2 class="mb-4">Proč právě k nám</h2>
+                <p class="mb-12">Co nás odlišuje od ostatních</p>
+                <div class="whyus-grid-cont grid-cont">
+                    <div class="whyus-grid-item">
+                        <div class="whyus-round-cont mb-4">
+                            <img src="./res/svg/PhLeaf.svg" alt="ikonka úspěchu">
+                        </div>
+                        <h4 class="mb-2">Čerstvé suroviny</h4>
+                        <p>Využíváme pouze čerstvé a kvalitní suroviny od místních dodavatelů</p>
                     </div>
-                    <h4>Čerstvé suroviny</h4>
-                    <p>Využíváme pouze čerstvé a kvalitní suroviny od místních dodavatelů</p>
-                </div>
-                <div>
-                    <div>
-                        <img src="" alt="ikonka úspěchu">
+                    <div class="whyus-grid-item">
+                        <div class="whyus-round-cont mb-4">
+                            <img src="./res/svg/PhCookingPot.svg" alt="ikonka úspěchu">
+                        </div>
+                        <h4 class="mb-2">Tradiční recepty</h4>
+                        <p>Naše jídla připravujeme podle ověřených tradičních receptů</p>
                     </div>
-                    <h4>Tradiční recepty</h4>
-                    <p>Naše jídla připravujeme podle ověřených tradičních receptů</p>
-                </div>
-                <div>
-                    <div>
-                        <img src="" alt="ikonka úspěchu">
+                    <div class="whyus-grid-item">
+                        <div class="whyus-round-cont mb-4">
+                            <img src="./res/svg/PhHouseLine.svg" alt="ikonka úspěchu">
+                        </div>
+                        <h4 class="mb-2">Příjemné prostředí</h4>
+                        <p>Nabízíme útulnou atmosféru ideální pro rodinné i obchodní setkání</p>
                     </div>
-                    <h4>Příjemné prostředí</h4>
-                    <p>Nabízíme útulnou atmosféru ideální pro rodinné i obchodní setkání</p>
-                </div>
-                <div>
-                    <div>
-                        <img src="" alt="ikonka úspěchu">
+                    <div class="whyus-grid-item">
+                        <div class="whyus-round-cont mb-4">
+                            <img src="./res/svg/PhUsersThree.svg" alt="ikonka úspěchu">
+                        </div>
+                        <h4 class="mb-2">Zkušený tým</h4>
+                        <p>Náš tým se skládá z profesionálních a přátelských pracovníků</p>
                     </div>
-                    <h4>Zkušený tým</h4>
-                    <p>Náš tým se skládá z profesionálních a přátelských pracovníků</p>
                 </div>
             </div>
         </section>
         
-        <section class="section-bg">
-            <h2>Otevírací doba</h2>
-            <p>Těšíme se na vaši návštěvu</p>
-            <div>
-                <div>
-                    <p>Pondělí</p>
-                    <p>11:00 - 22:00</p>
-                </div>
-                <div>
-                    <p>Úterý</p>
-                    <p>11:00 - 22:00</p>
-                </div>
-                <div>
-                    <p>Středa</p>
-                    <p>11:00 - 22:00</p>
-                </div>
-                <div>
-                    <p>Čtvrtek</p>
-                    <p>11:00 - 22:00</p>
-                </div>
-                <div>
-                    <p>Pátek</p>
-                    <p>11:00 - 23:00</p>
-                </div>
-                <div>
-                    <p>Sobota</p>
-                    <p>12:00 - 23:00</p>
-                </div>
-                <div>
-                    <p>Neděle</p>
-                    <p>12:00 - 21:00</p>
+        <section class="timetable-section section-bg py-20">
+            <div class="helper-div">
+                <h2 class="mb-4">Otevírací doba</h2>
+                <p class="mb-12">Těšíme se na vaši návštěvu</p>
+                <div class="timetable">
+                    <div class="timetable-item border-btm">
+                        <p>Pondělí</p>
+                        <p>11:00 - 22:00</p>
+                    </div>
+                    <div class="timetable-item mt-3 border-btm">
+                        <p>Úterý</p>
+                        <p>11:00 - 22:00</p>
+                    </div>
+                    <div class="timetable-item mt-3 border-btm">
+                        <p>Středa</p>
+                        <p>11:00 - 22:00</p>
+                    </div>
+                    <div class="timetable-item mt-3 border-btm">
+                        <p>Čtvrtek</p>
+                        <p>11:00 - 22:00</p>
+                    </div>
+                    <div class="timetable-item mt-3 border-btm">
+                        <p>Pátek</p>
+                        <p>11:00 - 23:00</p>
+                    </div>
+                    <div class="timetable-item mt-3 border-btm">
+                        <p>Sobota</p>
+                        <p>12:00 - 23:00</p>
+                    </div>
+                    <div class="timetable-item mt-3">
+                        <p>Neděle</p>
+                        <p>12:00 - 21:00</p>
+                    </div>
                 </div>
             </div>
         </section>
