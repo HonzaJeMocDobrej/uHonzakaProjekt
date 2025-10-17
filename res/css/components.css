@@ -205,6 +205,33 @@ header nav ul li a {
     font-weight: var(--font-weight-xs);
 }
 
+.visitus-section > .helper-div {
+    max-width: calc(var(--grid-unit) * 160);
+}
+
+.visitus-section img {
+    aspect-ratio: 16/9;
+    width: calc(var(--grid-unit) * 74);
+    border-radius: var(--radius-m);
+
+}
+
+.visitus-section .visitus-flex-cont {
+    gap: var(--space-l);
+}
+
+.visitus-section h3 {
+    font-size: var(--space-m);
+    line-height: var(--space-l);
+    margin-bottom: calc(var(--grid-unit) * 1.5);
+    font-weight: var(--font-weight-m);
+}
+
+.visitus-section p {
+    line-height: var(--space-m);
+    font-weight: var(--font-weight-s);
+}
+
 .helper-div {
     margin: 0 auto;
     display: flex;
