@@ -5,7 +5,11 @@
 
   .recommend-section .card-cont {
     grid-template-columns: repeat(2, 1fr);
-}
+  }
+
+  .hero-section h1 {
+    font-size: var(--font-size-2xl);
+  }
 }
 
 @media (max-width: 768px) {
@@ -14,6 +18,10 @@
   }
 
   .recommend-section .card-cont {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .menu-section .menu-cont .menu-card-cont {
     grid-template-columns: repeat(1, 1fr);
 }
 
@@ -24,4 +32,21 @@
 .timetable-section .timetable .timetable-item p:nth-child(2) {
     font-size: var(--font-size-xs);
 }
+
+  .hero-section h1 {
+    font-size: var(--font-size-xl);
+  }
+
+  .hero-section p {
+    font-size: var(--font-size-s);
+  }
+
+  .visitus-section .visitus-flex-cont {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .visitus-section .visitus-flex-cont, .visitus-section .visitus-flex-cont .right-div, .visitus-section img {
+    width: 100%;
+  }
 }

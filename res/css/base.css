@@ -64,6 +64,12 @@ footer p {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   color: var(--color-text);
+  text-align: center;
+}
+
+h1 {
+    font-weight: var(--font-weight-l);
+    color: var(--color-white);
 }
 
 h2 {
@@ -82,4 +88,5 @@ p {
   font-weight: var(--font-weight-m);
   line-height: calc(var(--grid-unit) * 3.25);
   color: var(--color-text-secondary);
+  text-align: center;
 }

@@ -27,6 +27,15 @@ header nav ul li a {
     font-weight: var(--font-weight-m);
 }
 
+.helper-div {
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 var(--space-l);
+}
+
 .hero-section {
     background-image: 
     linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)),
@@ -48,14 +57,13 @@ header nav ul li a {
 
 .hero-section h1 {
     font-size: var(--font-size-3xl);
-    font-weight: var(--font-weight-l);
-    color: var(--color-white);
 }
 
 .hero-section p {
     font-size: var(--font-size-m);
     font-weight: var(--font-weight-m);
     color: var(--color-white);
+    text-align: center;
 }
 
 .hero-section button {
@@ -68,7 +76,7 @@ header nav ul li a {
     align-items: center;
     gap: var(--space-xs);
     background-color: var(--color-warning-bg);
-    padding: calc(var(--grid-unit) * 1.5) 0;
+    padding: calc(var(--grid-unit) * 1.5) var(--space-m);
     border-top: 1px solid var(--color-warning-border);
     border-bottom: 1px solid var(--color-warning-border);
 }
@@ -77,6 +85,8 @@ header nav ul li a {
     font-size: var(--font-size-2xs);
     color: var(--color-warning-text);
     font-weight: var(--font-weight-l);
+    text-align: left;
+    line-height: var(--space-s);
 }
 
 .warning-section > img {
@@ -177,6 +187,10 @@ header nav ul li a {
     align-items: center;
 }
 
+.whyus-section > .helper-div {
+    max-width: calc(var(--grid-unit) * 160);
+}
+
 .timetable-section > .helper-div {
     max-width: calc(var(--grid-unit) * 112);
 }
@@ -211,7 +225,7 @@ header nav ul li a {
 
 .visitus-section img {
     aspect-ratio: 16/9;
-    width: calc(var(--grid-unit) * 74);
+    width: clamp(calc(var(--grid-unit) * 43), calc(calc(var(--grid-unit) * 20) + 30vw), calc(var(--grid-unit) * 74));
     border-radius: var(--radius-m);
 
 }
@@ -225,18 +239,90 @@ header nav ul li a {
     line-height: var(--space-l);
     margin-bottom: calc(var(--grid-unit) * 1.5);
     font-weight: var(--font-weight-m);
+    text-align: left;
 }
 
-.visitus-section p {
+.visitus-section .visitus-flex-cont p {
     line-height: var(--space-m);
-    font-weight: var(--font-weight-s);
+    font-weight: var(--font-weight-m);
+    font-size: var(--font-size-xs);
+    text-align: left;
 }
 
-.helper-div {
-    margin: 0 auto;
+.section-page-header {
+    padding: calc(var(--grid-unit) * 8) calc(var(--grid-unit) * 4);
+    background-color: var(--color-primary);
+}
+
+.section-page-header h1 {
+    font-size: var(--font-size-2xl);
+    color: var(--color-secondary);
+}
+
+.section-page-header p {
+    font-size: var(--font-size-xs);
+    color: var(--color-secondary);
+    margin-top: calc(var(--grid-unit) * 1);
+}
+
+.menu-section > .helper-div {
+    max-width: calc(var(--grid-unit) * 160);
+    padding-top: calc(var(--grid-unit) * 8);
+    padding-bottom: calc(var(--grid-unit) * 8);
+}
+
+.menu-section .menu-cont {
+    width: 100%;
+}
+
+.menu-section .menu-cont h2 {
+    padding-bottom: var(--space-s);
+    margin-bottom: var(--space-l);
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.menu-section .menu-cont:not(:first-child) {
+    margin-top: calc(var(--grid-unit) * 8);
+}
+
+.menu-section .menu-cont .menu-card-cont {
+    gap: var(--space-m);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+}
+
+.menu-section .menu-cont .menu-card-cont .menu-card {
+    padding: var(--space-m);
+    background-color: var(--color-card-bg);
+    border-radius: var(--radius-m);
+    height: fit-content;
+}
+
+.menu-section .menu-cont .menu-card-cont .menu-card:hover {
+    filter: brightness(0.9625);
+}
+
+.menu-section .menu-cont .menu-card-cont .menu-card p {
+    font-size: var(--font-size-xs);
+}
+
+.menu-section .menu-cont .menu-card-cont .menu-card > p {
+    text-align: left;
+}
+
+
+.menu-section .menu-cont .menu-card-cont .menu-card .card-top-cont {
     display: flex;
-    align-items:center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 var(--space-l);
+    justify-content: space-between;
+    margin-bottom: var(--space-xs);
+}
+
+.menu-section .menu-cont .menu-card-cont .menu-card .card-top-cont p {
+    font-weight: var(--font-weight-l);
+    color: var(--color-primary);
+}
+
+.menu-section .menu-cont .menu-card-cont .menu-card .card-top-cont h4 {
+    font-weight: var(--font-weight-m);
 }
