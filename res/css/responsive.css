@@ -1,9 +1,9 @@
 @media (max-width: 1024px) {
-  .whyus-section .whyus-grid-cont {
+  .whyus-section .grid-cont {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .recommend-section .card-cont {
+  .recommend-section .grid-cont {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -13,17 +13,10 @@
 }
 
 @media (max-width: 768px) {
-  .whyus-section .whyus-grid-cont {
+  .whyus-section .grid-cont, .recommend-section .grid-cont, .menu-section .grid-cont,
+  .ourteam-section .grid-cont, .ourvalues-section .grid-cont {
     grid-template-columns: repeat(1, 1fr);
   }
-
-  .recommend-section .card-cont {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .menu-section .menu-cont .menu-card-cont {
-    grid-template-columns: repeat(1, 1fr);
-}
 
 .timetable-section .timetable .timetable-item p:first-child {
     font-size: var(--font-size-2xs);
