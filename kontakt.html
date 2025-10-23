@@ -24,102 +24,104 @@
     </header>
 
     <main>
-        <section>
+        <section class="section-page-header">
             <h1>Kontakt</h1>
             <p>Rádi vás uvidíme</p>
         </section>
 
-        <section>
-            <img src="" alt="varovná ikonka">
-            <p>Varování: Tato webová stránka slouží pouze jako studentský projekt</p>
+        <section class="warning-section">
+            <img src="./res/svg/PhWarning.svg" alt="varovná ikonka">
+            <p>Varování: Tato webová stránka slouží pouze jako studentský zápočtový projekt</p>
         </section>
 
-        <div>
-            <div>
-                <div>
-                    <h2>Kontaktní údaje</h2>
-                    
-                    <h4>Adresa</h4>
-                    <p>Hlavní náměstí 123</p>
-                    <p>110 00 Praha 1</p>
-                    
-                    <h4>Telefon</h4>
-                    <p>+420 123 456 789</p>
-
-                    <h4>Email</h4>
-                    <p>info@uhonzaka.cz</p>
-
-                    <h2>Otevírací doba</h2>
-
-                    <div>
-                        <div>
-                            <p>Pondělí</p>
-                            <p>11:00 - 22:00</p>
-                        </div>
-
-                        <div>
-                            <p>Úterý</p>
-                            <p>11:00 - 22:00</p>
-                        </div>
-
-                        <div>
-                            <p>Středa</p>
-                            <p>11:00 - 22:00</p>
-                        </div>
-
-                        <div>
-                            <p>Čtvrtek</p>
-                            <p>11:00 - 22:00</p>
-                        </div>
-
-                        <div>
-                            <p>Pátek</p>
-                            <p>11:00 - 23:00</p>
-                        </div>
-
-                        <div>
-                            <p>Sobota</p>
-                            <p>12:00 - 23:00</p>
-                        </div>
-
-                        <div>
-                            <p>Neděle</p>
-                            <p>12:00 - 21:00</p>
+        <div class="helper-div otherpage-helper-div">
+            <section class="contact-section">
+                <div class="grid-cont">
+                    <div class="grid-item">
+                        <h2>Kontaktní údaje</h2>
+                        
+                        <h4>Adresa</h4>
+                        <p>Hlavní náměstí 123</p>
+                        <p>110 00 Praha 1</p>
+                        
+                        <h4 class="mt-4">Telefon</h4>
+                        <p>+420 123 456 789</p>
+    
+                        <h4 class="mt-4">Email</h4>
+                        <p>info@uhonzaka.cz</p>
+    
+                        <h2 class="mt-8">Otevírací doba</h2>
+    
+                        <div class="timetable">
+                            <div class="timetable-item">
+                                <p>Pondělí</p>
+                                <p>11:00 - 22:00</p>
+                            </div>
+    
+                            <div class="timetable-item">
+                                <p>Úterý</p>
+                                <p>11:00 - 22:00</p>
+                            </div>
+    
+                            <div class="timetable-item">
+                                <p>Středa</p>
+                                <p>11:00 - 22:00</p>
+                            </div>
+    
+                            <div class="timetable-item">
+                                <p>Čtvrtek</p>
+                                <p>11:00 - 22:00</p>
+                            </div>
+    
+                            <div class="timetable-item">
+                                <p>Pátek</p>
+                                <p>11:00 - 23:00</p>
+                            </div>
+    
+                            <div class="timetable-item">
+                                <p>Sobota</p>
+                                <p>12:00 - 23:00</p>
+                            </div>
+    
+                            <div class="timetable-item">
+                                <p>Neděle</p>
+                                <p>12:00 - 21:00</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="grid-item">
+                        <h2>Kontaktní formulář</h2>
+                        <form action="">
+                            <div class="input-cont">
+                                <label for="">Jméno a příjmení</label>
+                                <input type="text">
+                            </div>
+    
+                            <div class="input-cont mt-4">
+                                <label for="">Email</label>
+                                <input type="text">
+                            </div>
+    
+                            <div class="input-cont mt-4">
+                                <label for="">Telefon</label>
+                                <input type="text">
+                            </div>
+    
+                            <div class="input-cont mt-4">
+                                <label for="">Zpráva</label>
+                                <textarea name="message" id=""></textarea>
+                            </div>
+                            <button class="px-6 py-3 mt-4">Odeslat zprávu</button>
+                        </form>
+                    </div>
                 </div>
-                <div>
-                    <h2>Kontaktní formulář</h2>
-                    <form action="">
-                        <div>
-                            <label for="">Jméno a příjmení</label>
-                            <input type="text">
-                        </div>
-
-                        <div>
-                            <label for="">Email</label>
-                            <input type="text">
-                        </div>
-
-                        <div>
-                            <label for="">Telefon</label>
-                            <input type="text">
-                        </div>
-
-                        <div>
-                            <label for="">Zpráva</label>
-                            <textarea name="message" id=""></textarea>
-                        </div>
-                        <button>Odeslat zprávu</button>
-                    </form>
-                </div>
-            </div>
-            <div>
+            </section>
+            <section class="where-section">
                 <h2>Kde nás najdete</h2>
                 <div>
                     <iframe src="" frameborder="0"></iframe>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
 

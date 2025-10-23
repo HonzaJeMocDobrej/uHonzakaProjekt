@@ -198,14 +198,15 @@ header nav ul li a {
     padding: var(--space-xs) 0;
 }
 
-.timetable-section .timetable .timetable-item p:first-child {
+.timetable .timetable-item p:first-child {
     color: var(--color-text);
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-l);
 }
 
-.timetable-section .timetable .timetable-item p:nth-child(2) {
+.timetable .timetable-item p:nth-child(2) {
     font-weight: var(--font-weight-xs);
+    font-size: var(--font-size-s);
 }
 
 .visitus-section > .helper-div {
@@ -252,12 +253,6 @@ header nav ul li a {
     font-size: var(--font-size-xs);
     color: var(--color-secondary);
     margin-top: calc(var(--grid-unit) * 1);
-}
-
-.menu-section > .helper-div {
-    max-width: calc(var(--grid-unit) * 160);
-    padding-top: calc(var(--grid-unit) * 8);
-    padding-bottom: calc(var(--grid-unit) * 8);
 }
 
 .menu-section .menu-cont {
@@ -314,12 +309,6 @@ header nav ul li a {
 
 .menu-section .menu-cont .menu-card-cont .menu-card .card-top-cont h4 {
     font-weight: var(--font-weight-m);
-}
-
-.about-helper-div {
-    max-width: calc(var(--grid-unit) * 160);
-    padding-top: calc(var(--grid-unit) * 8);
-    padding-bottom: calc(var(--grid-unit) * 8);
 }
 
 .ourhistory-section {
@@ -397,5 +386,79 @@ header nav ul li a {
 
 .ourvalues-section .round-cont {
     width: calc(var(--grid-unit) * 8);
+}
+
+.otherpage-helper-div {
+    max-width: calc(var(--grid-unit) * 160);
+    padding-top: calc(var(--grid-unit) * 8);
+    padding-bottom: calc(var(--grid-unit) * 8);
+}
+
+.contact-section {
+    width: 100%;
+    margin-bottom: calc(var(--grid-unit) * 8);
+}
+
+.contact-section h2, .contact-section h4, .contact-section p  {
+    text-align: left;
+    width: 100%;
+}
+
+.contact-section .grid-cont {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2xl);
+    justify-content: space-around;
+}
+
+.contact-section h2, .where-section h2 {
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-l);
+    margin-bottom: var(--space-m);
+}
+
+.contact-section h4 {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-l);
+    font-family: var(--font-text);
+}
+
+.contact-section p {
+    line-height: calc(var(--grid-unit) * 2.5);
+}
+
+.contact-section .timetable {
+    width: 100%;
+}
+
+.contact-section .timetable .timetable-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-section .timetable .timetable-item:not(.contact-section .timetable .timetable-item:first-child) {
+    margin-top: calc(var(--grid-unit) * 1.5);
+}
+
+.contact-section .timetable .timetable-item p {
+    width: fit-content;
+}
+
+.contact-section form {
+    width: 100%;
+}
+
+.contact-section form button {
+    width: 100%;
+}
+
+.contact-section form .input-cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-section form .input-cont label {
+    margin-bottom: var(--space-2xs);
 }
 
