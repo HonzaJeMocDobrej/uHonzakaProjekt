@@ -42,4 +42,13 @@
   .visitus-section .visitus-flex-cont, .visitus-section .visitus-flex-cont .right-div, .visitus-section img {
     width: 100%;
   }
+
+  .helper-div {
+    padding-left: var(--space-s);
+    padding-right: var(--space-s);
+  }
+
+  .main-nav {
+    display: none;
+  }
 }

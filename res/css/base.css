@@ -115,3 +115,8 @@ textarea:focus, input:focus{
   outline: 2px solid var(--color-primary);
   outline-offset: -1px;
 }
+
+iframe {
+  border: 1px solid var(--color-input-border) !important;
+  box-sizing: content-box;
+}

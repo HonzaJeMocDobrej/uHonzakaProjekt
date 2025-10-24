@@ -309,6 +309,7 @@ header nav ul li a {
 
 .menu-section .menu-cont .menu-card-cont .menu-card .card-top-cont h4 {
     font-weight: var(--font-weight-m);
+    text-align: left;
 }
 
 .ourhistory-section {
@@ -462,3 +463,11 @@ header nav ul li a {
     margin-bottom: var(--space-2xs);
 }
 
+.where-section, .where-section iframe {
+    width: 100%;
+}
+
+.where-section iframe {
+    height: calc(var(--grid-unit) * 50);
+    border-radius: var(--radius-m);
+}
