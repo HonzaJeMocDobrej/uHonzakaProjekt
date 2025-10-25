@@ -10,6 +10,10 @@
   .hero-section h1 {
     font-size: var(--font-size-2xl);
   }
+
+  header {
+    padding: calc(var(--grid-unit) * 1) calc(var(--grid-unit) * 2);
+  }
 }
 
 @media (max-width: 768px) {
@@ -50,5 +54,15 @@
 
   .main-nav {
     display: none;
+  }
+
+  .burger-menu-btn {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-cont {
+    display: none !important;
   }
 }

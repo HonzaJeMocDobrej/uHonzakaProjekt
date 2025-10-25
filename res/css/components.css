@@ -1,8 +1,8 @@
-header a {
+header a, nav a {
     border-radius: var(--radius-s);
 }
 
-header a:hover {
+nav a:hover, header a:hover {
     background-color: var(--color-hover);
 }
 
@@ -14,14 +14,14 @@ header > a {
     padding: calc(var(--grid-unit) * 1.5) var(--space-s);
 }
 
-header nav ul {
+nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: var(--space-xs);
 }
 
-header nav ul li a {
+nav ul li a {
     padding: calc(var(--grid-unit) * 1.5) var(--space-s);
     font-family: var(--font-text);
     font-weight: var(--font-weight-m);
@@ -470,4 +470,55 @@ header nav ul li a {
 .where-section iframe {
     height: calc(var(--grid-unit) * 50);
     border-radius: var(--radius-m);
+}
+
+.burger-menu-btn {
+    display: none;
+    aspect-ratio: 1/1;
+    width: calc(var(--grid-unit) * 5);
+    padding: calc(var(--grid-unit) * 1);
+    border-radius: var(--radius-s);
+    cursor: pointer;
+}
+
+.burger-menu-btn:hover {
+    background-color: var(--color-hover);
+}
+
+.mobile-menu-cont {
+    display: none;
+    position: fixed;
+    width: 100vw; 
+    height: 100vh;
+    backdrop-filter: blur(3px) brightness(60%);
+}
+
+.clickable-area {
+    width: calc(100vw - calc(var(--grid-unit) * 32));
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.mobile-menu-cont nav{
+    height: 100%;
+    background-color: var(--color-secondary);
+    position: absolute;
+    right: 0;
+    width: calc(var(--grid-unit) * 32)
+}
+
+.mobile-menu-cont nav ul{
+    flex-direction: column;
+    padding: var(--space-s);
+}
+
+.mobile-menu-cont nav ul li{
+    width: 100%;
+}
+
+.mobile-menu-cont nav ul li a{
+    width: 100%;
+    display: block;
+    padding: calc(var(--grid-unit) * 1.75) var(--space-s);
 }

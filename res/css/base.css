@@ -32,7 +32,7 @@ a {
 }
 
 header {
-  padding: calc(var(--grid-unit) * 1) calc(var(--grid-unit) * 6);
+  padding: calc(var(--grid-unit) * 1) calc(var(--grid-unit) * 4);
   color: var(--color-text);
   position: sticky;
   top: 0;
