@@ -14,16 +14,12 @@ input, button, textarea, select {
 
 button {
   background: none;
-  border: none;
   cursor: pointer;
-  color: white;
-  background-color: var(--color-button);
   font-weight: var(--font-weight-l);
   border-radius: var(--radius-s);
-}
-
-button:hover {
-  background-color: var(--color-button-secondary);
+  transition: 250ms ease-in-out;
+  box-sizing: border-box;
+  box-shadow: 6px 7px 9px -8px rgba(0,0,0,0.5);
 }
 
 a {
@@ -104,6 +100,7 @@ input, textarea {
   background-color: var(--color-card-bg);
   font-weight: var(--font-weight-m);
   color: var(--color-text);
+  box-shadow: 6px 7px 9px -8px rgba(0,0,0,0.2);
 }
 
 textarea {
@@ -119,4 +116,5 @@ textarea:focus, input:focus{
 iframe {
   border: 1px solid var(--color-input-border) !important;
   box-sizing: content-box;
+  box-shadow: 6px 7px 9px -8px rgba(0,0,0,0.5);
 }

@@ -10,8 +10,11 @@
     --color-button-secondary: #8c6144;
     --color-button-hover: #875d41;
     --color-warning-text: #ad1f1f;
+    --color-warning-text-secondary: #ad1fa8;
     --color-warning-bg: #eedfde;
+    --color-warning-bg-secondary: #eedeec;
     --color-warning-border: #daa4a4;
+    --color-warning-border-secondary: #daa4d5;
     --color-card-bg: #f1f0ef;
     --color-card-hover: #e9e8e7;
     --color-round-icon: #ece7e3;

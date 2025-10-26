@@ -70,6 +70,11 @@ nav ul li a {
     font-size: var(--font-size-s);
 }
 
+.hero-section button:hover {
+    border: 2px solid white;
+    color: white;
+}
+
 .warning-section {
     display: flex;
     justify-content: center;
@@ -83,7 +88,6 @@ nav ul li a {
 
 .warning-section p {
     font-size: var(--font-size-2xs);
-    color: var(--color-warning-text);
     font-weight: var(--font-weight-l);
     text-align: left;
     line-height: var(--space-s);
@@ -123,6 +127,7 @@ nav ul li a {
 
 .recommend-section .card-cont .card {
     width: fit-content;
+    box-shadow: 6px 7px 9px -8px rgba(0,0,0,0.1);
 }
 
 .recommend-section .card-cont .card:hover {
@@ -190,6 +195,7 @@ nav ul li a {
     width: 100%;
     max-width: calc(var(--grid-unit) * 56);
     border-radius: var(--radius-m);
+    box-shadow: 6px 7px 9px -8px rgba(0,0,0,0.1);
 }
 
 .timetable-section .timetable .timetable-item {
@@ -217,6 +223,7 @@ nav ul li a {
     aspect-ratio: 16/9;
     width: clamp(calc(var(--grid-unit) * 43), calc(calc(var(--grid-unit) * 20) + 30vw), calc(var(--grid-unit) * 74));
     border-radius: var(--radius-m);
+    box-shadow: 6px 7px 9px -8px rgba(0,0,0,0.5);
 
 }
 
@@ -281,6 +288,7 @@ nav ul li a {
     background-color: var(--color-card-bg);
     border-radius: var(--radius-m);
     height: fit-content;
+    box-shadow: 6px 7px 9px -8px rgba(0,0,0,0.1);
 }
 
 .menu-section .menu-cont .menu-card-cont .menu-card:hover {
@@ -338,6 +346,7 @@ nav ul li a {
     padding: var(--space-m);
     background-color: var(--color-card-bg);
     border-radius: var(--radius-m);
+    box-shadow: 6px 7px 9px -8px rgba(0,0,0,0.1);
 }
 
 .grid-item h4 {
@@ -521,4 +530,48 @@ nav ul li a {
     width: 100%;
     display: block;
     padding: calc(var(--grid-unit) * 1.75) var(--space-s);
+}
+
+.button-primary {
+    border: none;
+    color: white;
+    background-color: var(--color-button);
+    border: 2px solid transparent;
+}
+
+.button-primary:hover {
+    border: 2px solid var(--color-button);
+    color: var(--color-button);
+    background-color: transparent;
+}
+
+.button-secondary {
+    border: 2px solid var(--color-button);
+    color: var(--color-button);
+}
+
+.button-secondary:hover {
+    border: 2px solid transparent;
+    color: white;
+    background-color: var(--color-button);
+}
+
+.warning-primary {
+    background-color: var(--color-warning-bg);
+    border-top: 1px solid var(--color-warning-border);
+    border-bottom: 1px solid var(--color-warning-border);
+}
+
+.warning-primary p {
+    color: var(--color-warning-text);
+}
+
+.warning-secondary {
+    background-color: var(--color-warning-bg-secondary);
+    border-top: 1px solid var(--color-warning-border-secondary);
+    border-bottom: 1px solid var(--color-warning-border-secondary);
+}
+
+.warning-secondary p {
+    color: var(--color-warning-text-secondary);
 }
