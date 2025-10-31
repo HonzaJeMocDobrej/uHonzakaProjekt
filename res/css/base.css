@@ -42,6 +42,35 @@ header {
   align-items: center;
 }
 
+header a, nav a {
+    border-radius: var(--radius-s);
+}
+
+nav a:hover, header a:hover {
+    background-color: var(--color-hover);
+}
+
+header > a {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-m);
+    color: var(--color-primary);
+    font-weight: var(--font-weight-l);
+    padding: calc(var(--grid-unit) * 1.5) var(--space-s);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+nav ul li a {
+    padding: calc(var(--grid-unit) * 1.5) var(--space-s);
+    font-family: var(--font-text);
+    font-weight: var(--font-weight-m);
+}
+
 footer {
   display: flex;
   align-items: center;
