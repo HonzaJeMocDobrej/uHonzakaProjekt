@@ -10,7 +10,7 @@
 .hero-section {
     background-image: 
     linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)),
-    url('../img/restaurace_int.png');
+    url('../img/restaurace_int.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -331,15 +331,15 @@
 }
 
 .ourteam-section .grid-cont .info-card:first-child .round-cont {
-    background-image: url("../img/jan_honzak.png");
+    background-image: url("../img/jan_honzak.jpg");
 }
 
 .ourteam-section .grid-cont .info-card:nth-child(2) .round-cont {
-    background-image: url("../img/marie_novakova.png");
+    background-image: url("../img/marie_novakova.jpg");
 }
 
 .ourteam-section .grid-cont .info-card:nth-child(3) .round-cont {
-    background-image: url("../img/petr_svoboda.png");
+    background-image: url("../img/petr_svoboda.jpg");
 }
 
 .ourteam-section .ourteam-round-cont img {
