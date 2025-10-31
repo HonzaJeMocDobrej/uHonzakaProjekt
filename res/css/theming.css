@@ -5,7 +5,9 @@
     --color-secondary: #f5f5f4;
     --color-secondary-rgb: 245, 245, 244;
     --color-text: #3d3129;
-    --color-text-secondary: #937c6c;
+    /* --color-text-secondary: #937c6c; */
+    --color-text-secondary: #7B675B;
+    --color-text-tertiary: #865E41;
     --color-button: #9b6c4b;
     --color-button-secondary: #8c6144;
     --color-button-hover: #875d41;

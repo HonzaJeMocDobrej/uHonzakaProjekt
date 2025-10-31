@@ -136,7 +136,7 @@
 .price-card .price-card-price {
     font-size: var(--font-size-s);
     font-weight: var(--font-weight-l);
-    color: var(--color-primary);
+    color: var(--color-text-tertiary);
 }
 
 .whyus-section .grid-cont {
@@ -501,13 +501,13 @@
 
 .button--primary:hover {
     border: 2px solid var(--color-button);
-    color: var(--color-button);
+    color: var(--color-text-tertiary);
     background-color: transparent;
 }
 
 .button--secondary {
     border: 2px solid var(--color-button);
-    color: var(--color-button);
+    color: var(--color-text-tertiary);
 }
 
 .button--secondary:hover {
