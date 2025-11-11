@@ -110,24 +110,24 @@
                         <form>
                             <div class="input-cont">
                                 <label for="name">Jméno a příjmení</label>
-                                <input id="name" type="text">
+                                <input id="name" type="text" name="name" required>
                             </div>
     
                             <div class="input-cont mt-4">
                                 <label for="email">Email</label>
-                                <input id="email" type="text">
+                                <input id="email" type="email" name="email" required>
                             </div>
     
                             <div class="input-cont mt-4">
                                 <label for="phone">Telefon</label>
-                                <input id="phone" type="text">
+                                <input id="phone" type="tel" name="phone" pattern="[0-9]{9}" required>
                             </div>
     
                             <div class="input-cont mt-4">
                                 <label for="message">Zpráva</label>
                                 <textarea id="message" name="message"></textarea>
                             </div>
-                            <button class="button--primary px-6 py-3 mt-4">Odeslat zprávu</button>
+                            <button type="submit" class="button--primary px-6 py-3 mt-4">Odeslat zprávu</button>
                         </form>
                     </div>
                 </div>
